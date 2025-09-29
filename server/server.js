@@ -12,7 +12,7 @@ const port = process.env.PORT || 3001;
 app.use(express.json());
 app.use(cors());
 // !Routes
-app.get("/", (_, res) => {
+app.get("/", (req, res) => {
   res.send("API is LIVE | College");
 });
 app.use('/api/subjects',subjectRouter)
